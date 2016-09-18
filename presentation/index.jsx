@@ -3,20 +3,15 @@ import {
 	Appear,
 	BlockQuote,
 	Cite,
-	CodePane,
 	Deck,
-	Fill,
 	Heading,
 	Image,
-	Layout,
 	Link,
 	ListItem,
 	List,
-	Markdown,
 	Quote,
 	Slide,
 	Spectacle,
-	Text,
 } from 'spectacle';
 import preloader from 'spectacle/lib/utils/preloader';
 import createTheme from 'spectacle/lib/themes/default';
