@@ -4,7 +4,7 @@
   "description": "Cours de dev Web ECV",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "cross-env NODE_ENV=production webpack --config webpack.config.production.js",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.production.js && cp index.prod.html dist/index.html",
     "lint": "eslint --ext .js,.jsx .",
     "deploy": "git subtree push --prefix dist origin gh-pages",
     "start": "cross-env NODE_ENV=development node server.js"
