@@ -22,6 +22,9 @@ import 'spectacle/lib/themes/default/index.css';
 import plouf from '../assets/plouf.gif';
 import boring from '../assets/boring.gif';
 import memory from '../assets/memory.gif';
+import quizz from '../assets/quizz.gif';
+import request from '../assets/request.gif';
+import processWeb from '../assets/processWeb.png';
 
 const images = {
 
@@ -142,6 +145,71 @@ const Presentation = () => (
 				<Heading size={2} caps fit textColor="primary">
 					Des mots à retenir!!
 				</Heading>
+			</Slide>
+			<Slide bgColor="primary">
+				<Heading size={1} fit caps lineHeight={1} textColor="black">
+					Jouons à retrouver les mot clés de cet historique!
+				</Heading>
+				<List>
+					<Appear><ListItem>
+						ordinateurs
+					</ListItem></Appear>
+					<Appear><ListItem>
+						mail
+					</ListItem></Appear>
+					<Appear><ListItem>
+						serveur
+					</ListItem></Appear>
+					<Appear><ListItem>
+						noms de domaine
+					</ListItem></Appear>
+					<Appear><ListItem>
+						World Wide Web
+					</ListItem></Appear>
+					<Appear><ListItem>
+						navigateur
+					</ListItem></Appear>
+				</List>
+			</Slide>
+			<Slide bgColor="black">
+				<Image src={quizz} margin="0px auto 40px" height="293px" />
+				<Heading size={2} caps fit textColor="primary">
+					Quizz time!
+				</Heading>
+			</Slide>
+			<Slide bgColor="primary">
+				<Heading size={1} fit caps lineHeight={1} textColor="black">
+					Faire une phrase avec ces mots
+				</Heading>
+				<List>
+					<ListItem>
+						ordinateurs
+					</ListItem>
+					<ListItem>
+						mail
+					</ListItem>
+					<ListItem>
+						serveur
+					</ListItem>
+					<ListItem>
+						noms de domaine
+					</ListItem>
+					<ListItem>
+						World Wide Web
+					</ListItem>
+					<ListItem>
+						navigateur
+					</ListItem>
+				</List>
+			</Slide>
+			<Slide bgColor="black">
+				<Image src={request} margin="0px auto 40px" height="293px" />
+				<Heading size={2} caps fit textColor="primary">
+					Une histoire de requêtes (et de réponses)
+				</Heading>
+			</Slide>
+			<Slide bgColor="primary">
+				<Image src={processWeb} margin="0px auto 40px" width="850px" />
 			</Slide>
 		</Deck>
 	</Spectacle>
