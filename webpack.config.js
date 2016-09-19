@@ -50,6 +50,11 @@ module.exports = {
 				include: __dirname
 			},
 			{
+				test: /\.example/,
+				loader: 'raw',
+				include: path.join(__dirname, 'assets')
+			},
+			{
 				test: /\.svg$/,
 				loader: 'url?limit=10000&mimetype=image/svg+xml',
 				include: path.join(__dirname, 'assets')

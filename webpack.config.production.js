@@ -45,6 +45,11 @@ module.exports = {
 				loader: 'style-loader!css-loader',
 			},
 			{
+				test: /\.example/,
+				loader: 'raw',
+				include: path.join(__dirname, 'assets')
+			},
+			{
 				test: /\.(png|jpg|gif)$/,
 				loader: 'url-loader?limit=8192',
 			},
