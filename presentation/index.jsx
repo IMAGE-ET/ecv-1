@@ -17,8 +17,9 @@ import {
 	TableItem,
 	TableRow,
 } from 'spectacle';
-import CodeSlide from 'spectacle-code-slide';
+import preloader from 'spectacle/lib/utils/preloader';
 import createTheme from 'spectacle/lib/themes/default';
+import CodeSlide from 'spectacle-code-slide';
 import 'normalize.css';
 import 'spectacle/lib/themes/default/index.css';
 
@@ -39,6 +40,21 @@ import summary from '../assets/summary.gif';
 // code
 import requestCode from '../assets/request.example';
 import responseCode from '../assets/response.example';
+
+preloader({
+	plouf,
+	boring,
+	memory,
+	quizz,
+	request,
+	processWeb,
+	operation,
+	teapot,
+	pages,
+	problem,
+	homework,
+	summary,
+});
 
 const theme = createTheme({
 	primary: '#00a0e6',
